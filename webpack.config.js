@@ -104,6 +104,7 @@ module.exports = {
 				enforce: "pre",
 				test: /\.(cjs|js)$/,
 				use: ["source-map-loader"],
+				exclude: /node_modules[/\\]xmldoc/
 			},
 			{
 				test: /\.js$/,
