@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>my PDFMake</title>
+    <script src="./js/pdfmake.js"></script>
+    <script src="./js/vfs_fonts.js"></script>
+</head>
+<body>
+    <div id="pdfmake">
+        <button onclick="createPdf()">Create PDF</button>
+    </div>
+    <script>
+        function createPdf() {
+            var dd = {
+                content: [
+                    {text: 'Titillium Web Regular', font: 'TitilliumWeb'},
+                    {text: 'Titillium Web Bold', font: 'TitilliumWeb', bold: true},
+                    {text: 'Titillium Web Italic', font: 'TitilliumWeb', italics: true},
+                    {text: 'Titillium Web Bold Italic', font: 'TitilliumWeb', bold: true, italics: true},
+                    {text: 'Roboto Regular', font: 'Roboto'},
+                ],
+                defaultStyle: {
+                    font: 'TitilliumWeb',
+                }
+            };
+            pdfMake.createPdf(dd).download('document.pdf');
+        }
+    </script>
+</body>
+</html>

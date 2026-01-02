@@ -1,8 +1,8 @@
 var pdfmake = require('../js/index'); // only during development, otherwise use the following line
 //var pdfmake = require('pdfmake');
 
-var Roboto = require('../fonts/Roboto');
-pdfmake.addFonts(Roboto);
+var TitilliumWeb = require('../fonts/TitilliumWeb');
+pdfmake.addFonts(TitilliumWeb);
 
 
 var docDefinition = {
@@ -76,7 +76,10 @@ var docDefinition = {
 			margin: [20, 0, 40, 0],
 			fontSize: 15
 		}
-	}
+	},
+	defaultStyle: {
+		font: 'TitilliumWeb', // TilliumWeb Set default font
+	},
 };
 
 var now = new Date();

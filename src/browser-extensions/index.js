@@ -15,6 +15,12 @@ let defaultClientFonts = {
 		bold: 'Roboto-Medium.ttf',
 		italics: 'Roboto-Italic.ttf',
 		bolditalics: 'Roboto-MediumItalic.ttf'
+	},
+	TitilliumWeb: {
+		normal: 'TitilliumWeb-Regular.woff',
+		bold: 'TitilliumWeb-Bold.woff',
+		italics: 'TitilliumWeb-Italic.woff',
+		bolditalics: 'TitilliumWeb-BoldItalic.woff'
 	}
 };
 
